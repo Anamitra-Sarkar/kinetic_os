@@ -52,9 +52,7 @@ class KineticOS:
         # Initialize camera
         self.cap = cv2.VideoCapture(config.CAMERA_INDEX)
         if not self.cap.isOpened():
-            raise RuntimeError(
-                f"Failed to open camera at index {
-                    config.CAMERA_INDEX}")
+            raise RuntimeError(f"Failed to open camera at index {config.CAMERA_INDEX}")
 
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, config.CAMERA_WIDTH)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, config.CAMERA_HEIGHT)

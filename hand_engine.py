@@ -150,11 +150,11 @@ class HandEngine:
             True if the finger is curled, False otherwise.
         """
         finger_joints = {
-            "index": (
-                self.INDEX_FINGER_TIP, self.INDEX_FINGER_PIP, self.INDEX_FINGER_MCP), "middle": (
-                self.MIDDLE_FINGER_TIP, self.MIDDLE_FINGER_PIP, self.MIDDLE_FINGER_MCP), "ring": (
-                self.RING_FINGER_TIP, self.RING_FINGER_PIP, self.RING_FINGER_MCP), "pinky": (
-                    self.PINKY_TIP, self.PINKY_PIP, self.PINKY_MCP)}
+            "index": (self.INDEX_FINGER_TIP, self.INDEX_FINGER_PIP, self.INDEX_FINGER_MCP),
+            "middle": (self.MIDDLE_FINGER_TIP, self.MIDDLE_FINGER_PIP, self.MIDDLE_FINGER_MCP),
+            "ring": (self.RING_FINGER_TIP, self.RING_FINGER_PIP, self.RING_FINGER_MCP),
+            "pinky": (self.PINKY_TIP, self.PINKY_PIP, self.PINKY_MCP)
+        }
 
         tip_idx, pip_idx, mcp_idx = finger_joints[finger.lower()]
         tip = hand_data.landmarks[tip_idx]

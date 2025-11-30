@@ -7,7 +7,7 @@ and coordinate mapping with active region support.
 """
 
 import math
-from typing import Tuple, Optional
+from typing import Tuple, Optional, List
 import config
 
 
@@ -210,7 +210,7 @@ class FPSCounter:
         Args:
             sample_size: Number of frames to average over.
         """
-        self._times: list = []
+        self._times: List[float] = []
         self._sample_size = sample_size
         self._last_time: Optional[float] = None
 
