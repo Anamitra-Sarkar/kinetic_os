@@ -1,0 +1,14 @@
+# KINETIC-OS Dependencies
+# =======================
+# Production-grade hand-gesture interface for Linux
+
+# Core dependencies
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+
+# Mouse control for Linux
+pyautogui>=0.9.54
+
+# Optional: For better X11 support on Linux
+# python-xlib>=0.33
